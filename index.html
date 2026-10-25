@@ -196,7 +196,7 @@
       <div class="absolute -top-3 -left-3 text-4xl doodle-float">🎈</div>
       <div class="absolute -top-3 -right-3 text-4xl doodle-float" style="animation-delay:0.7s">🎂</div>
       <div class="absolute -bottom-3 -left-3 text-4xl doodle-float" style="animation-delay:1.2s">🦢</div>
-      <div class="absolute -bottom-3 -right-3 text-4xl doodle-float" style="animation-delay:1.8s">👑</div>
+      <div class="absolute -bottom-3 -right-3 text-4xl doodle-float" style="animation-delay:0.5s">👑</div>
 
       <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-rose-500/20 border border-rose-400/40 text-rose-200 text-xs font-semibold tracking-widest uppercase mb-4">
         <span>✨ 8th November Birthday Special ✨</span>
@@ -439,7 +439,7 @@
                 <p id="spotlight-couple-title" class="text-sm font-bold text-amber-200 truncate">Tender Couple Portrait in Warm Bedroom</p>
                 <div class="flex items-center justify-between text-[11px] text-rose-300 mt-0.5">
                   <span id="spotlight-couple-folder">LEOVERSE 👑🦢🌼🌷</span>
-                  <span id="spotlight-couple-speed">Auto-Forward: 1.8s ⚡</span>
+                  <span id="spotlight-couple-speed">Auto-Forward: 0.5s ⚡</span>
                 </div>
               </div>
             </div>
@@ -448,7 +448,7 @@
             <div class="flex items-center justify-between gap-2 mt-3">
               <button id="spotlight-prev-btn" class="px-3 py-1.5 rounded-xl bg-rose-950/90 hover:bg-rose-800 text-rose-200 text-xs border border-rose-500/30 cursor-pointer">⏮ Prev</button>
               <button id="spotlight-pause-btn" class="px-3 py-1.5 rounded-xl bg-amber-500/20 hover:bg-amber-500/30 text-amber-200 text-xs border border-amber-400/40 font-semibold cursor-pointer">⏸ Pause Auto</button>
-              <button id="spotlight-speed-btn" class="px-3 py-1.5 rounded-xl bg-rose-600/30 hover:bg-rose-600/50 text-rose-100 text-xs border border-rose-400/40 cursor-pointer">⚡ Speed: Fast (1.8s)</button>
+              <button id="spotlight-speed-btn" class="px-3 py-1.5 rounded-xl bg-rose-600/30 hover:bg-rose-600/50 text-rose-100 text-xs border border-rose-400/40 cursor-pointer">⚡ Speed: Fast (0.5s)</button>
               <button id="spotlight-next-btn" class="px-3 py-1.5 rounded-xl bg-rose-950/90 hover:bg-rose-800 text-rose-200 text-xs border border-rose-500/30 cursor-pointer">Next ⏭</button>
             </div>
           </div>
@@ -1605,10 +1605,10 @@
       document.getElementById("spotlight-speed-btn")?.addEventListener("click", function() {
         if (spotlightIntervalMs === 1800) {
           spotlightIntervalMs = 900;
-          this.textContent = "⚡ Speed: Turbo (0.9s)";
+          this.textContent = "⚡ Speed: Turbo (0.5s)";
         } else {
           spotlightIntervalMs = 1800;
-          this.textContent = "⚡ Speed: Fast (1.8s)";
+          this.textContent = "⚡ Speed: Fast (0.5s)";
         }
         startSpotlightAutoForward();
       });
