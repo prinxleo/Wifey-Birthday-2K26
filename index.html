@@ -299,7 +299,7 @@
   <!-- ========================================================================= -->
   <!-- FLOATING MUSIC PLAYER DRAWER (YouTube cxBYCHSU4io + WebAudio Romantic Synth) -->
   <!-- ========================================================================= -->
-  <div id="music-player-drawer" class="fixed bottom-4 right-4 z-40 w-80 sm:w-96 romantic-glass rounded-2xl p-4 border border-amber-400/40 shadow-2xl transition-all duration-300">
+  <div id="music-player-drawer" class="fixed bottom-0 right-0 z-0 w-0 sm:w-0 romantic-glass rounded-2xl p-4 border border-amber-400/40 shadow-2xl transition-all duration-300">
     <div class="flex items-center justify-between mb-2">
       <div class="flex items-center gap-2">
         <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping"></span>
@@ -1605,10 +1605,10 @@
       document.getElementById("spotlight-speed-btn")?.addEventListener("click", function() {
         if (spotlightIntervalMs === 1800) {
           spotlightIntervalMs = 900;
-          this.textContent = "⚡ Speed: Turbo (0.7s)";
+          this.textContent = "⚡ Speed: Turbo (1.5s)";
         } else {
           spotlightIntervalMs = 1800;
-          this.textContent = "⚡ Speed: Fast (0.7s)";
+          this.textContent = "⚡ Speed: Fast (1.5s)";
         }
         startSpotlightAutoForward();
       });
