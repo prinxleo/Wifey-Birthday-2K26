@@ -1605,10 +1605,10 @@
       document.getElementById("spotlight-speed-btn")?.addEventListener("click", function() {
         if (spotlightIntervalMs === 1800) {
           spotlightIntervalMs = 900;
-          this.textContent = "⚡ Speed: Turbo (1.s)";
+          this.textContent = "⚡ Speed: Turbo (0.5.s)";
         } else {
           spotlightIntervalMs = 1800;
-          this.textContent = "⚡ Speed: Fast (1.5s)";
+          this.textContent = "⚡ Speed: Fast (0.5s)";
         }
         startSpotlightAutoForward();
       });
